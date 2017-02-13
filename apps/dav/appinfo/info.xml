@@ -7,6 +7,7 @@
 	<author>owncloud.org</author>
 	<version>0.2.7</version>
 	<default_enable/>
+	<use-migrations>true</use-migrations>
 	<types>
 		<filesystem/>
 	</types>
