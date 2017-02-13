@@ -41,10 +41,10 @@ class Version20170202220512 implements ISchemaMigration {
 		if ($table->hasIndex('property_index')) {
 			$table->dropIndex('property_index');
 		}
-		if ($table->getColumn('userid')) {
+		if ($table->hasColumn('userid')) {
 			$table->dropColumn('userid');
 		}
-		if ($table->getColumn('propertypath')) {
+		if ($table->hasColumn('propertypath')) {
 			$table->dropColumn('propertypath');
 		}
 	}

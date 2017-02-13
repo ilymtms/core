@@ -71,7 +71,7 @@ class Version20170116170538 implements ISchemaMigration {
 		} else {
 			// update
 			$table = $schema->getTable("${prefix}properties");
-			if (!$table->getColumn('fileid')) {
+			if (!$table->hasColumn('fileid')) {
 				$table->addColumn('fileid', 'bigint', [
 					'default' => 0,
 					'notnull' => true,
